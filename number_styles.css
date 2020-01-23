@@ -1,0 +1,63 @@
+html{
+    height: auto;
+}
+body{
+    background: white;
+    background: linear-gradient(darkblue, rgb(0,191,255));
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: darkblue;
+}
+div.row-1,div.row-2,div.row-3{
+    height: 120px;
+}
+header{
+    text-align: center;
+    color: gold;
+    margin: 10px 0px;
+    font-size: 30px;
+    text-shadow: rgb(51,51,51) 5px 5px 10px;
+}
+form{
+    width: 420px;
+    height: auto;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: gold solid 5px;
+    background-color: rgb(0, 93, 255);
+    padding-top: 20px;
+    box-shadow: rgb(51,51,51) 10px 10px 20px;;
+    text-align: center;
+}
+button{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    border: gold solid 2px;
+    background-color: darkblue;
+    font-size: 20px;
+    color: gold;
+}
+button:hover{
+    background-color: rgb(0, 191, 255);
+    color: darkblue;
+    transition: background-color 0.25s ease-in 0.1s,
+        color 0.25s ease-in 0.1s;
+}
+#display{
+    border: solid 3px darkblue;
+    height: 45px;
+    padding: 5px;
+    text-align: right;
+    float: none;
+    margin: 0 auto;
+    background-color: rgb(0, 191, 255);
+    border-radius: 7px;
+    transition: cubic-bezier();
+}
+input{
+    background: gold;
+    border: darkblue solid 2px; 
+}
