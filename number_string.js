@@ -7,6 +7,7 @@ var doc6 = document.getElementById("six");
 var output = document.getElementById("output");
 
 function leastGreat(){
+    //Setting variables for all functions
     var one = parseFloat(doc1.value);
     var two = parseFloat(doc2.value);
     var three = parseFloat(doc3.value);
@@ -21,8 +22,9 @@ function leastGreat(){
     var o5 = 0;
     var o6 = 0;
 
+    //Finds the smallest number
     o1 = Math.min(one, two, three, four, five, six);
-
+    //Finds the values from smallest to largest
     if(o1 === one){
         one = two;
         two = three;
@@ -140,7 +142,7 @@ function leastGreat(){
     }
 
     o6 = one;
-    
+    //Lists values in order from least to greatest
     output.innerHTML = o1 + ", " + o2 + ", " + o3 + ", " + o4 + ", " + o5 + ", " + o6;
 }
 function median(){
@@ -151,6 +153,7 @@ function median(){
     var five = parseFloat(doc5.value);
     var six = parseFloat(doc6.value);
     output.innerHTML = "";
+    //Finds if value is in the middle
     var mid2 = one;
     if(mid2 < two){
         mid2 = two;
@@ -193,6 +196,7 @@ function largest(){
     var five = parseFloat(doc5.value);
     var six = parseFloat(doc6.value);
     output.innerHTML = "";
+    //Finds largest number
     var large = one;
     if(large < two){
         large = two;
@@ -219,6 +223,7 @@ function smallest(){
     var five = parseFloat(doc5.value);
     var six = parseFloat(doc6.value);
     output.innerHTML = "";
+    //Finds smallest number
     var small = one;
     if(small > two){
         small = two;
@@ -245,6 +250,7 @@ function mean(){
     var five = parseFloat(doc5.value);
     var six = parseFloat(doc6.value);
     output.innerHTML = "";
+    //Adds all numbers and divides them by six
     var numStr = (one + two + three + four + five + six) / 6;
     output.innerHTML = numStr;
 }
@@ -256,7 +262,7 @@ function mode(){
     var five = parseFloat(doc5.value);
     var six = parseFloat(doc6.value);
     output.innerHTML = "";
-    
+    //Finds which number appears most frequently
     var n1 = 1;
     var n2 = 1;
     var n3 = 1;
@@ -344,6 +350,7 @@ function range(){
     var five = parseFloat(doc5.value);
     var six = parseFloat(doc6.value);
     output.innerHTML = "";
+    //Finds largest and smallest number and subtracts them
     var ran = one;
     if(ran < two){
         ran = two;
@@ -385,6 +392,7 @@ function duplicate(){
     var four = parseFloat(doc4.value);
     var five = parseFloat(doc5.value);
     var six = parseFloat(doc6.value);
+    //FInds any numbers that appears most often
     output.innerHTML = "";
     if(one === two || one === three || one === four || one === five || one === six){
         output.innerHTML += " " + one; 
@@ -409,6 +417,7 @@ function unique(){
     var four = parseFloat(doc4.value);
     var five = parseFloat(doc5.value);
     var six = parseFloat(doc6.value);
+    //Finds numbers that don't repeat themselves 
     output.innerHTML = "";
     if(one !== two && one !== three && one !== four && one !== five && one !== six){
         output.innerHTML += " " + one; 
